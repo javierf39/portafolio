@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+* {
+    background: transparent;
+    color: black;
+}
+
+h1 {
+    text-align: left;
+    margin: 0%;
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: 2px solid black;
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+}
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    .proyecto {
+        flex-basis: 49%;
+        position: relative;
+        border-radius: 20px;
+        margin-top: 2%;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            transition: all 400ms ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .info-proyecto {
+            position: absolute;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            background: rgba(240, 243, 244, 0.2);
+            border-radius: 20px;
+            opacity: 0;
+            left: 0;
+            top: 0;
+            width: 90%;
+            padding: 5%;
+            text-align: center;
+            transition: all 400ms ease-in-out;
+            h2 {
+                font-size: 25px;
+                font-family: 'Dosis', sans-serif;
+                font-weight: bolder;
+            }
+            p {
+                margin: 0px;
+                padding: 0px;
+                font-size: 16px;
+            }
+            a {
+                margin-left: 5px;
+                color: white;
+            }
+            .tecnologias {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 15px;
+                .icon {
+                    width: 7%;
+                    height: 7%;
+                    margin: 0px 5px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .proyecto:hover {
+        box-shadow: none;
+    }
+    .proyecto:hover img {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    .proyecto:hover .info-proyecto {
+        opacity: 1;
+    }
+}
+
+@media (max-width:1300px) {
+    .proyectos {
+        .proyecto {
+            .info-proyecto {
+                h2 {
+                    margin: 0%;
+                }
+                .tecnologias {
+                    margin-top: 5px;
+                    .icon {
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1100px) {
+    .proyectos {
+        .proyecto {
+            .info-proyecto {
+                .tecnologias {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .icons {
+                        flex-basis: 50%;
+                        .icon {
+                            width: 12%;
+                            height: 12%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .proyectos {
+        justify-content: center;
+        .proyecto {
+            flex-basis: 100%;
+            margin-bottom: 10px;
+            .info-proyecto {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .proyectos {
+        .proyecto {
+            .info-proyecto {
+                h2 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .proyectos {
+        .proyecto:hover {
+            margin-bottom: 60px;
+        }
+    }
+}

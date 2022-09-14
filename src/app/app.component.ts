@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portafolio';
+
+  ngOnInit(){
+    AOS.init({
+      offset: 250,
+      delay:200,
+      duration:1500
+    });
+  }
+  
 }
+

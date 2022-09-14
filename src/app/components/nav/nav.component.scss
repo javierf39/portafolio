@@ -1,0 +1,37 @@
+nav {
+    width: 100%;
+    background: rgba(66, 73, 73, 0.7);
+    padding: 5px 0px;
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 1px solid white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: space-around;
+        li {
+            display: block;
+            flex-basis: 30%;
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+                span {
+                    transition: all 400ms;
+                }
+            }
+        }
+    }
+}
+
+nav {
+    ul {
+        a:hover span {
+            // border-bottom: 1.5px solid #F9E79F;
+            // font-weight: bolder;
+        }
+    }
+}

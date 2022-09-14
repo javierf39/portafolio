@@ -1,0 +1,19 @@
+<h1>Proyectos</h1>
+<div class="proyectos">
+    <div *ngFor="let p of proyectos" class="proyecto">
+        <img src="{{p.img}}" alt="">
+        <div class="info-proyecto">
+            <h2>{{p.nombre}}</h2>
+            <p>{{p.descripcion}}
+                <a href="{{p.github}}" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+            </p>
+            <div class="tecnologias">
+                <h2>Tecnologías</h2>
+                <div class="icons">
+                    <i *ngFor="let t of p.tecnologias" class="{{t}}"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
