@@ -5,8 +5,11 @@
         <div class="info-proyecto">
             <h2>{{p.nombre}}</h2>
             <p>{{p.descripcion}}
-                <a href="{{p.github}}" target="_blank"><i class="fa-brands fa-github icon"></i></a>
             </p>
+            <div class="links">
+                <a href="{{p.github}}" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+                <a *ngIf="p.web" href="{{p.web}}" target="_blank"><i class="fa-solid fa-globe icon"></i></a>
+            </div>
             <div class="tecnologias">
                 <h2>Tecnologías</h2>
                 <div class="icons">

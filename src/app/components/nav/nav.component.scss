@@ -1,26 +1,77 @@
-nav {
-    width: 100%;
-    background: rgba(66, 73, 73, 0.7);
-    padding: 5px 0px;
-    border-radius: 0px 0px 20px 20px;
-    border-bottom: 1px solid white;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    ul {
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0% 10%;
+    margin-top: 20px;
+    #logo {
+        width: 65px;
+        height: 65px;
+        transition: all 400ms;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    #logo:hover {
+        transform: rotate(360deg);
+    }
+    #menu {
         display: flex;
+        flex-basis: 50%;
+        justify-content: space-around;
         margin: 0;
         padding: 0;
         list-style: none;
-        justify-content: space-around;
         li {
-            display: block;
-            flex-basis: 30%;
             a {
-                font-size: 20px;
-                text-decoration: none;
+                font-size: 18px;
                 color: white;
-                font-weight: bolder;
-                span {
-                    transition: all 400ms;
+                text-decoration: none;
+                transition: all 400ms;
+            }
+        }
+        li::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background-color: #F4D03F;
+            transform: scale(0, 2);
+            transform-origin: center;
+            transition: transform .50s;
+        }
+        li:hover::after {
+            transform: scale(2, 1);
+        }
+        li:hover a {
+            color: #F4D03F;
+        }
+    }
+}
+
+@media(max-width:650px) {
+    #nav {
+        #menu {
+            flex-basis: 60%;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    #nav {
+        width: 85%;
+        margin: 0% 6.5%;
+        margin-top: 20px;
+        #logo {
+            width: 55px;
+            height: 55px;
+        }
+        #menu {
+            li {
+                a {
+                    font-size: 15px;
                 }
             }
         }
