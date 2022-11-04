@@ -4,7 +4,7 @@ serif;
 $amarillo:#FFDE59;
 h1 {
     text-align: left;
-    font-size: 40px;
+    font-size: 35px;
     font-family: $fuente-titulos
 }
 
@@ -26,7 +26,7 @@ h1 {
         margin-left: 40px;
         p {
             width: 100%;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 20px;
         }
     }
@@ -39,10 +39,9 @@ h1 {
         .iconos {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             .icono {
-                margin: 0 5px;
-                width: 100px;
+                width: 88px;
                 height: auto;
                 padding-top: 20px;
                 background: #424949;
@@ -57,8 +56,9 @@ h1 {
     }
 }
 
-@media(max-width:1355px) {
+@media(max-width:1100px) {
     .presentacion {
+        grid-template-columns: auto 75%;
         .img {
             img {
                 height: 60%;
@@ -68,16 +68,10 @@ h1 {
             .iconos {
                 justify-content: stretch;
                 .icono {
-                    margin: 10px;
+                    margin: 5px;
                 }
             }
         }
-    }
-}
-
-@media(max-width:1100px) {
-    .presentacion {
-        grid-template-columns: auto 75%;
     }
 }
 
