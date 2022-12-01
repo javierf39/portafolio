@@ -13,6 +13,7 @@ export class ProyectosComponent implements OnInit {
     {nombre:"Películas", descripcion:"Aplicación web, basada en un CRUD, con desarrollo de FronEnd y BackEnd.", img:"../assets/img/pelicula.PNG",tecnologias:["fa-brands fa-html5 icon","fa-brands fa-css3 icon","fa-brands fa-angular icon", "fa-brands fa-node-js icon"], github:"https://github.com/javierf39/peliculasAngular", web:null},
     {nombre:"Tienda", descripcion:"Tienda online, consume los datos de la API dummyJSON", img:"../assets/img/tienda.PNG", tecnologias:["fa-brands fa-html5 icon","fa-brands fa-sass icon","fa-brands fa-angular icon"], github:"https://github.com/javierf39/tienda_angular", web:"https://tienda-jf.netlify.app"},
     {nombre:"Mundo Patitas", descripcion:"Aplicación web para gestionar horas medicas en clínicas veterinarias", img:"../assets/img/mundoPatitas.PNG", tecnologias:["fa-brands fa-html5 icon","fa-brands fa-css3 icon","fa-brands fa-js icon","fa-brands fa-node-js icon","fa-brands fa-python icon"], github:"https://github.com/javierf39/MundoPatitas",web:null},
+    {nombre:"Hubclean", descripcion:"Web desarrollado para una empresa de limpieza", img:"../assets/img/hubclean.png", tecnologias:["fa-brands fa-html5 icon","fa-brands fa-sass icon","fa-brands fa-angular icon", "fa-brands fa-node-js icon"], github:"https://github.com/javierf39/hubclean",web:"https://hubclean.cl/"},
   ];
 
   constructor() { }
